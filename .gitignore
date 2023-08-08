@@ -1,4 +1,4 @@
- #.gitignore
+# Ignore specific directories and files
 .logs
 .reports
 .screenshot
