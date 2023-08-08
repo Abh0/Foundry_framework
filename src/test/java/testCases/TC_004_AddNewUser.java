@@ -1,16 +1,16 @@
 package testCases;
 
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pageObject.AddNewUser;
+import pageObject.Application_Sign_inPage;
 import pageObject.Home_page;
 import testBase.BaseClass;
 
 public class TC_004_AddNewUser extends BaseClass {
 
 	@Test
-	public void addNewUser_Infoundry() {
+	public void addNewUser_Infoundry() throws InterruptedException {
 
 		Home_page hp = new Home_page(driver);
 		hp.clickSignIn();
@@ -18,13 +18,30 @@ public class TC_004_AddNewUser extends BaseClass {
 
 		// create object for access TC_002_SignIn_page
 
-		TC_002_SignIn_page tc2 = new TC_002_SignIn_page();
-		tc2.page_SignIn();
+		Application_Sign_inPage sng = new Application_Sign_inPage(driver);
+		sng.enterEmailId(rb.getString("email"));
+		sng.enterPassword(rb.getString("password"));
+		sng.clickOnLoginbtn();
+
 		// create object for AddNewUser
+
 		AddNewUser admin = new AddNewUser(driver);
 
 		admin.settingButton();
+
 		admin.addNewUserButton();
+
+		admin.enterUserName(randomString());
+
+		admin.enterFullName(randomString().toUpperCase());
+
+		admin.enterUserEmailId(randomString() + "@gmail.com");
+		Thread.sleep(5000);
+
+		admin.enterPassword(randomAlphaNumeric());
+
+		admin.clickSubmitbtn();
+		Thread.sleep(5000);
 
 	}
 }

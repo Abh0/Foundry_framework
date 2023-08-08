@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC_003_Login_Logout">
+      <class name="testCases.TC_005_AddNewOrder">
         <methods>
           <include name="tearDown"/>
+          <include name="addNewOrder_InFoundry"/>
           <include name="setup"/>
-          <include name="page_Logoutbtn"/>
         </methods>
-      </class> <!-- testCases.TC_003_Login_Logout -->
+      </class> <!-- testCases.TC_005_AddNewOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

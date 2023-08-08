@@ -16,13 +16,12 @@ public class TC_003_Login_Logout extends BaseClass {
 		Home_page hp = new Home_page(driver);  //  9966044425
 		hp.clickSignIn();
 
-	TC_002_SignIn_page login = new TC_002_SignIn_page();
-	login.page_SignIn();
+	
 
 		Application_Sign_inPage wcpage = new Application_Sign_inPage(driver);
 
-	wcpage.enterEmailId("abhishek@101reporters.com");
-		wcpage.enterPassword("0987654321");
+	wcpage.enterEmailId(rb.getString("email"));
+		wcpage.enterPassword(rb.getString("password"));
 		wcpage.clickOnLoginbtn();
 		
 		wcpage.clickOnProfilebtn();
