@@ -44,13 +44,10 @@ public class BaseClass {
 	public void setup(String br) throws InterruptedException {
 
 		rb = ResourceBundle.getBundle("config"); // reading data from properties file
-		
-
 		logger = LogManager.getLogger(this.getClass());
 
 		// if else {} condition for execute script on multiple browser
-
-		if (br.equalsIgnoreCase("chrome")) {
+			if (br.equalsIgnoreCase("chrome")) {
 			logger.info("...Launching Chrome browser...");
 
 			
@@ -82,13 +79,11 @@ public class BaseClass {
 
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-
 		driver.get(rb.getString("appURL")); // hard coded the url
-
 		driver.manage().window().maximize();
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-	    System.out.println(	driver.hashCode());
+	   
 
 	}
 
@@ -153,6 +148,8 @@ public class BaseClass {
 		return destination;
 	}
 	
+	
+	//block of code for to draw redline where webpage show error
 	 public void drawRedBox(String imagePath) throws IOException {  //2
 	        File imageFile = new File(imagePath);                //3
 	        BufferedImage image = ImageIO.read(imageFile);         //4

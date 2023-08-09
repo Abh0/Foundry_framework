@@ -41,6 +41,7 @@ public class TC_001_getfreedemo_page extends BaseClass {
 		logger.info("successfully user register");
 		} 
 		catch (Exception e){
+			e.printStackTrace();
 			
 			logger.error("test failed...");
 			

@@ -7,7 +7,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class WelcomePage extends BasePage {
 
-	public WelcomePage(WebDriver driver) {
+	
+	// this is constructor 
+	public WelcomePage(WebDriver driver) {                   // home or welcome page 
 		super(driver);
 
 	}
@@ -31,8 +33,10 @@ public class WelcomePage extends BasePage {
 	@FindBy(xpath = "//button[@class='MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1feinxp' and @type='submit']")
 	WebElement btnGetDemo; // get demo submit button
 
+	
+	
+	
 	// Action method
-
 	public void enterFullName(String fname) {
 		txtFullName.sendKeys(fname);
 	}

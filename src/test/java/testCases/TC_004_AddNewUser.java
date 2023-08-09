@@ -1,5 +1,6 @@
 package testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObject.AddNewUser;
@@ -11,7 +12,7 @@ public class TC_004_AddNewUser extends BaseClass {
 
 	@Test
 	public void addNewUser_Infoundry() throws InterruptedException {
-
+try {
 		Home_page hp = new Home_page(driver);
 		hp.clickSignIn();
 		logger.info("Add new user Test Case start... ");
@@ -42,6 +43,10 @@ public class TC_004_AddNewUser extends BaseClass {
 
 		admin.clickSubmitbtn();
 		Thread.sleep(5000);
-
+}
+ catch (Exception e) {
+	 e.printStackTrace();
+	 Assert.fail();
+ }
 	}
 }

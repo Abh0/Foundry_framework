@@ -18,6 +18,8 @@
 			<class name="testCases.TC_003_Login_Logout"/>
             <class name="testCases.TC_004_AddNewUser"/>
 			<class name="testCases.TC_005_AddNewOrder"/>
+			<class name=".testCases.TC_006_AddNewProduct"/>
+			
 	
 		</classes>
 	</test>           
@@ -27,7 +29,8 @@
 	
 	
 	
-	<!--  <test name="FirefoxTest">
+	<!--
+	  <test name="FirefoxTest">
 		<parameter name ="browser" value="firefox" />
 		<classes>
 			<class name="testCases.TC_001_getfreedemo_page"/>
@@ -35,6 +38,8 @@
 			<class name="testCases.TC_003_Login_Logout"/>
        		<class name="testCases.TC_004_AddNewUser"/>  
 			<class name="testCases.TC_005_AddNewOrder"/>  
+            <class name=".testCases.TC_006_AddNewProduct"/>
+	
 			
 		</classes>
 	</test>                   -->
@@ -50,9 +55,11 @@
 			<class name="testCases.TC_003_Login_Logout"/>
 			<class name="testCases.TC_004_AddNewUser"/>
 			<class name="testCases.TC_005_AddNewOrder"/>
+            <class name=".testCases.TC_006_AddNewProduct"/>
+	
 	
 		</classes>
-	</test>              -->
+	</test>             -->
    
 
 

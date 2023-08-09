@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-08T14:40:20 IST" name="Suite" finished-at="2023-08-08T14:41:19 IST" duration-ms="59553">
+  <suite started-at="2023-08-09T15:10:40 IST" name="Suite" finished-at="2023-08-09T15:11:03 IST" duration-ms="23650">
     <groups>
     </groups>
-    <test started-at="2023-08-08T14:40:20 IST" name="ChromeTest" finished-at="2023-08-08T14:41:19 IST" duration-ms="59553">
-      <class name="testCases.TC_003_Login_Logout">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_003_Login_Logout@17fc391b]" started-at="2023-08-08T14:40:34 IST" name="setup" finished-at="2023-08-08T14:40:37 IST" duration-ms="2994" status="PASS">
+    <test started-at="2023-08-09T15:10:40 IST" name="Test" finished-at="2023-08-09T15:11:03 IST" duration-ms="23650">
+      <class name="testCases.TC_006_AddNewProduct">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_006_AddNewProduct@45d84a20]" started-at="2023-08-09T15:10:40 IST" name="setup" finished-at="2023-08-09T15:10:46 IST" duration-ms="6507" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,99 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="page_Logoutbtn()[pri:0, instance:testCases.TC_003_Login_Logout@17fc391b]" started-at="2023-08-08T14:40:37 IST" name="page_Logoutbtn" finished-at="2023-08-08T14:40:44 IST" duration-ms="6471" status="PASS">
+        <test-method signature="addNewProduct_InFoundry()[pri:0, instance:testCases.TC_006_AddNewProduct@45d84a20]" started-at="2023-08-09T15:10:47 IST" name="addNewProduct_InFoundry" finished-at="2023-08-09T15:11:02 IST" duration-ms="15545" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- page_Logoutbtn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_003_Login_Logout@17fc391b]" started-at="2023-08-08T14:40:44 IST" name="tearDown" finished-at="2023-08-08T14:40:44 IST" duration-ms="249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_003_Login_Logout -->
-      <class name="testCases.TC_001_getfreedemo_page">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_001_getfreedemo_page@59402b8f]" started-at="2023-08-08T14:40:20 IST" name="setup" finished-at="2023-08-08T14:40:26 IST" duration-ms="6101" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="getfreedemo_user_page()[pri:0, instance:testCases.TC_001_getfreedemo_page@59402b8f]" started-at="2023-08-08T14:40:26 IST" name="getfreedemo_user_page" finished-at="2023-08-08T14:40:28 IST" duration-ms="1768" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getfreedemo_user_page -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_getfreedemo_page@59402b8f]" started-at="2023-08-08T14:40:28 IST" name="tearDown" finished-at="2023-08-08T14:40:28 IST" duration-ms="271" status="PASS">
+        </test-method> <!-- addNewProduct_InFoundry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_006_AddNewProduct@45d84a20]" started-at="2023-08-09T15:11:02 IST" name="tearDown" finished-at="2023-08-09T15:11:03 IST" duration-ms="1145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_001_getfreedemo_page -->
-      <class name="testCases.TC_005_AddNewOrder">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_005_AddNewOrder@609e8838]" started-at="2023-08-08T14:41:03 IST" name="setup" finished-at="2023-08-08T14:41:06 IST" duration-ms="3062" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="addNewOrder_InFoundry()[pri:0, instance:testCases.TC_005_AddNewOrder@609e8838]" started-at="2023-08-08T14:41:06 IST" name="addNewOrder_InFoundry" finished-at="2023-08-08T14:41:19 IST" duration-ms="13069" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewOrder_InFoundry -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_005_AddNewOrder@609e8838]" started-at="2023-08-08T14:41:19 IST" name="tearDown" finished-at="2023-08-08T14:41:19 IST" duration-ms="500" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_005_AddNewOrder -->
-      <class name="testCases.TC_004_AddNewUser">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_004_AddNewUser@2b30a42c]" started-at="2023-08-08T14:40:44 IST" name="setup" finished-at="2023-08-08T14:40:47 IST" duration-ms="3395" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="addNewUser_Infoundry()[pri:0, instance:testCases.TC_004_AddNewUser@2b30a42c]" started-at="2023-08-08T14:40:47 IST" name="addNewUser_Infoundry" finished-at="2023-08-08T14:41:02 IST" duration-ms="14747" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewUser_Infoundry -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_004_AddNewUser@2b30a42c]" started-at="2023-08-08T14:41:02 IST" name="tearDown" finished-at="2023-08-08T14:41:03 IST" duration-ms="559" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_004_AddNewUser -->
-      <class name="testCases.TC_002_SignIn_page">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_002_SignIn_page@4082ba93]" started-at="2023-08-08T14:40:28 IST" name="setup" finished-at="2023-08-08T14:40:31 IST" duration-ms="2992" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="page_SignIn()[pri:0, instance:testCases.TC_002_SignIn_page@4082ba93]" started-at="2023-08-08T14:40:31 IST" name="page_SignIn" finished-at="2023-08-08T14:40:34 IST" duration-ms="2628" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- page_SignIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_SignIn_page@4082ba93]" started-at="2023-08-08T14:40:34 IST" name="tearDown" finished-at="2023-08-08T14:40:34 IST" duration-ms="302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_002_SignIn_page -->
-    </test> <!-- ChromeTest -->
+      </class> <!-- testCases.TC_006_AddNewProduct -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

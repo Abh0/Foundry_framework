@@ -1,5 +1,6 @@
 package testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObject.Application_Sign_inPage;
@@ -11,7 +12,7 @@ public class TC_005_AddNewOrder extends BaseClass {
 
 	@Test
 	public void addNewOrder_InFoundry() throws InterruptedException {
-
+     try {
 		Home_page hp = new Home_page(driver);
 		hp.clickSignIn();
 
@@ -46,7 +47,11 @@ public class TC_005_AddNewOrder extends BaseClass {
 		
 		order.clickOnAddButton();
 		Thread.sleep(3000);
-		
+     }
+     catch (Exception e) {
+    	 e.printStackTrace();
+    	 Assert.fail();
+     }
 		
 
 	}

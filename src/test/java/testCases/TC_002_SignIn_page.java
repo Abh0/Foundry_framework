@@ -1,6 +1,7 @@
 package testCases;
 
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObject.AddNewUser;
@@ -15,7 +16,7 @@ public class TC_002_SignIn_page extends  BaseClass {
 	
 	@Test
 	public void page_SignIn() {
-
+try {
 		Home_page hp = new Home_page(driver);
 		logger.info("start of TC_002_SignIn_page...... ");
 		hp.clickSignIn();
@@ -26,7 +27,12 @@ public class TC_002_SignIn_page extends  BaseClass {
 		wcpage1.enterPassword(rb.getString("password"));
 
 		wcpage1.clickOnLoginbtn();
-		
+}
+catch (Exception e) {
+	e.printStackTrace();
+	Assert.fail();
+}
+
 		
 
 		
