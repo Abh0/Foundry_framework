@@ -10,7 +10,7 @@
 	</listeners>
 	
 	
-		
+	
 	
 	
 	
@@ -19,13 +19,16 @@
 		<parameter name ="browser" value="chrome" />
 		
 		<classes>
-		<!-- 	<class name="testCases.TC_001_getfreedemo_page"/>  -->
-		<!--    <class name="testCases.TC_002_SignIn_page"/>  -->
-		            <class name="testCases.TC_003_Login_Logout"/> 
-		<!-- 	<class name="testCases.TC_004_AddNewUser"/>  -->
-		<!-- 	<class name="testCases.TC_005_AddNewOrder"/>  -->
-		<!-- 	<class name="testCases.TC_006_AddNewProduct"/>  -->
-			
+		<!--	<class name="testCases.TC_001_getfreedemo_page"/>  -->
+		<!--	<class name="testCases.TC_002_SignIn_page"/>    -->
+		<!--   <class name="testCases.TC_003_Login_Logout"/>    -->
+		<!--	<class name="testCases.TC_004_AddNewUser"/>     -->
+		<!-- <class name="testCases.TC_005_AddNewOrder"/>       -->
+		<!-- <class name="testCases.TC_006_AddNewProduct"/>      -->
+        <!--      <class name="testCases.TC_007_CreateNewCustomer"/>   -->
+
+		   
+		<class name="testCases.TC_008_Customer_SlidePagination"/>
 			
 		</classes>
 		

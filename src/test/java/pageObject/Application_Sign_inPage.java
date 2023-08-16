@@ -25,6 +25,11 @@ public class Application_Sign_inPage extends BasePage {
 
 	// click on profile button link
 
+	
+	@FindBy (xpath =  "//div[contains(text(),\"Today's Sales\")]")
+	WebElement todaySales;
+	
+	
 	@FindBy(xpath = "//div[@class='MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-154ogbs']")
 	WebElement btnProfile;
 	
@@ -32,6 +37,30 @@ public class Application_Sign_inPage extends BasePage {
 	@FindBy(xpath = "//li[@role='menuitem']")
 	WebElement btnLogout;
 
+	
+	
+	
+	
+	public boolean isMySignInExists()   // MyAccount Page heading display status
+	{
+		try {
+			return (todaySales.isDisplayed());
+		} catch (Exception e) {
+			return (false);
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	// Action method
 	public void enterEmailId(String useremail) {
 		txtLoginEmailid.sendKeys(useremail);
@@ -45,6 +74,10 @@ public class Application_Sign_inPage extends BasePage {
 		btnLogin.click();
 	}
 
+	public void verifyPage() {
+		System.out.println(todaySales.getText());
+	}
+	
 	public void clickOnProfilebtn() {
 		btnProfile.click();
 	}
