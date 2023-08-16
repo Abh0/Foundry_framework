@@ -1,6 +1,6 @@
  # .gitignore
-.logs
-.reports
-.screenshot
-.test-output
-/target/
+logs/
+reports/
+screenshot/
+test-output/
+target/
