@@ -13,7 +13,7 @@ import testBase.BaseClass;
 
 public class TC_007_CreateNewCustomer extends BaseClass{
 
-	@Test
+	@Test(priority=7,groups={"Regression", "Foundry_Main"})
 	public void createCustomerIn_foundry()   throws IOException{
 		
 		

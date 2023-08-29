@@ -10,7 +10,7 @@ import testBase.BaseClass;
 
 public class TC_004_AddNewUser extends BaseClass {
 
-	@Test
+	@Test(priority=4,groups={"Regression", "Foundry_Main"})
 	public void addNewUser_Infoundry() throws InterruptedException {
 try {
 		Home_page hp = new Home_page(driver);

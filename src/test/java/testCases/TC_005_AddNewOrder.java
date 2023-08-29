@@ -10,7 +10,7 @@ import testBase.BaseClass;
 
 public class TC_005_AddNewOrder extends BaseClass {
 
-	@Test
+	@Test(priority=5,groups={"Regression", "Foundry_Main"})
 	public void addNewOrder_InFoundry() throws InterruptedException {
      try {
 		Home_page hp = new Home_page(driver);

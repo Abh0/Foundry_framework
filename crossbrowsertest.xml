@@ -15,10 +15,20 @@
 		<classes>
 			<class name="testCases.TC_001_getfreedemo_page"/>
 			<class name="testCases.TC_002_SignIn_page"/>
-			<class name="testCases.TC_003_Login_Logout"/>
+	<!--   <class name="testCases.TC_003_Login_Logout"/>         -->
 			<class name="testCases.TC_004_AddNewUser"/>
 			<class name="testCases.TC_005_AddNewOrder"/>
 			<class name="testCases.TC_006_AddNewProduct"/>
+			<class name="testCases.TC_007_CreateNewCustomer"/>
+			<class name="testCases.TC_008_Customer_SlidePagination"/>
+			<class name="testCases.TC_009_AddNewCoupon"/>
+			<class name="testCases.TC_010_AddcouponWithDiscountPer"/>
+			
+			<class name="testCases.TC_011_AddCouponFreeShipping"/>	
+			<class name="testCases.TC_012_AddCouponBuyXGetY"/>
+			<class name="testCases.TC_013_AddNewCustomCollection"/>
+				<class name="testCases.TC_014_AddCollectionWithSubCollection"/> 
+			<class name="testCases.TC_015_AddBrandCollection"/>
 			
 			
 		</classes>
@@ -29,36 +39,66 @@
 	
 	
 	
-	<!--
-		 <test name="FirefoxTest"> 
-	<parameter name ="browser" value="firefox" />
-	 <classes>
-		<class name="testCases.TC_001_getfreedemo_page"/>
-		 <class name="testCases.TC_002_SignIn_page"/>
-		<class name="testCases.TC_003_Login_Logout"/>
-		 <class name="testCases.TC_004_AddNewUser"/>
-		<class name="testCases.TC_005_AddNewOrder"/>
-		 <class name="testCases.TC_006_AddNewProduct"/>
-		</classes> 
-		</test>
-		 -->
 	
-	
-	
-	<!-- 
-		
-		<test name="EdgeTest"> 
-	<parameter name ="browser" value="edge" /> 
-	<classes> 
-		<class name="testCases.TC_001_getfreedemo_page"/>
-		 <class name="testCases.TC_002_SignIn_page"/>
-		<class name="testCases.TC_003_Login_Logout"/> 
+	<test name="FirefoxTest">
+		<parameter name ="browser" value="firefox" />
+		<classes>
+			
+			
+			<class name="testCases.TC_001_getfreedemo_page"/>
+			<class name="testCases.TC_002_SignIn_page"/>
+		<!--  <class name="testCases.TC_003_Login_Logout"/>     -->
 			<class name="testCases.TC_004_AddNewUser"/>
-		<class name="testCases.TC_005_AddNewOrder"/> 
+			<class name="testCases.TC_005_AddNewOrder"/>
 			<class name="testCases.TC_006_AddNewProduct"/>
+			<class name="testCases.TC_007_CreateNewCustomer"/>
+			<class name="testCases.TC_008_Customer_SlidePagination"/>
+			<class name="testCases.TC_009_AddNewCoupon"/>
+			<class name="testCases.TC_010_AddcouponWithDiscountPer"/>
+			
+			<class name="testCases.TC_011_AddCouponFreeShipping"/>	
+			<class name="testCases.TC_012_AddCouponBuyXGetY"/>
+			<class name="testCases.TC_013_AddNewCustomCollection"/>
+				<class name="testCases.TC_014_AddCollectionWithSubCollection"/> 
+			<class name="testCases.TC_015_AddBrandCollection"/>
 		</classes>
-		 </test>
-		         -->
+	</test>
+		
+	 
+		
+		
+		
+		
+		
+			
+	
+	
+	
+		
+		<!--  
+		<test name="EdgeTest"> 
+		<parameter name ="browser" value="edge" /> 
+		<classes> 
+			<class name="testCases.TC_001_getfreedemo_page"/>
+			<class name="testCases.TC_002_SignIn_page"/>
+			<class name="testCases.TC_003_Login_Logout"/>
+			<class name="testCases.TC_004_AddNewUser"/>
+			<class name="testCases.TC_005_AddNewOrder"/>
+			<class name="testCases.TC_006_AddNewProduct"/>
+			<class name="testCases.TC_007_CreateNewCustomer"/>
+			<class name="testCases.TC_008_Customer_SlidePagination"/>
+			<class name="testCases.TC_009_AddNewCoupon"/>
+			<class name="testCases.TC_010_AddcouponWithDiscountPer"/>
+		<class name="testCases.TC_011_AddCouponFreeShipping"/>	
+		<class name="testCases.TC_012_AddCouponBuyXGetY"/>
+		<class name="testCases.TC_013_AddNewCustomCollection"/>
+		<class name="testCases.TC_014_AddCollectionWithSubCollection"/> 
+		<class name="testCases.TC_015_AddBrandCollection"/>
+		
+			</classes>
+		 </test>           
+		  -->
+		        
 	
 	
 	

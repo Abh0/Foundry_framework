@@ -24,12 +24,12 @@ public class Application_Sign_inPage extends BasePage {
 	WebElement btnLogin;
 
 	// click on profile button link
-
+	
 	
 	@FindBy (xpath =  "//div[contains(text(),\"Today's Sales\")]")
 	WebElement todaySales;
 	
-	
+	// click on profile button link
 	@FindBy(xpath = "//div[@class='MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-154ogbs']")
 	WebElement btnProfile;
 	

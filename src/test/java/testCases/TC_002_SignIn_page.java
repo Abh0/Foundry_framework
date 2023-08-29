@@ -14,7 +14,7 @@ public class TC_002_SignIn_page extends  BaseClass {
 
 	
 	
-	@Test
+	@Test(priority = 2, groups={"Regression","Foundry_Main"})
 	public void page_SignIn() {
 try {
 		Home_page hp = new Home_page(driver);

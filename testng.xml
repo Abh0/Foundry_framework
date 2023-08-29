@@ -2,38 +2,72 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	
-	
+		
 	
 	<listeners>
 		<listener class-name="utilities.ExtentReportManager"/>
 		
 	</listeners>
 	
-	
-	
-	
-	
-	
 	<test thread-count="5" name="Test">
 		
 		<parameter name ="browser" value="chrome" />
 		
 		<classes>
-		<!--	<class name="testCases.TC_001_getfreedemo_page"/>  -->
-		<!--	<class name="testCases.TC_002_SignIn_page"/>    -->
-		<!--   <class name="testCases.TC_003_Login_Logout"/>    -->
-		<!--	<class name="testCases.TC_004_AddNewUser"/>     -->
-		<!-- <class name="testCases.TC_005_AddNewOrder"/>       -->
-		<!-- <class name="testCases.TC_006_AddNewProduct"/>      -->
-        <!--      <class name="testCases.TC_007_CreateNewCustomer"/>   -->
+			
+			<!--<class name="testCases.TC_001_getfreedemo_page"/>  
+				 	<class name="testCases.TC_002_SignIn_page"/>    
+			  	 <class name="testCases.TC_003_Login_Logout"/>     
+			 		<class name="testCases.TC_004_AddNewUser"/>    
+				<class name="testCases.TC_005_AddNewOrder"/>     
+					 
+			 <class name="testCases.TC_006_AddNewProduct"/>  
+			 	    
+         	 <class name="testCases.TC_007_CreateNewCustomer"/>  
+			 <class name="testCases.TC_008_Customer_SlidePagination"/>
+				 <class name="testCases.TC_009_AddNewCoupon"/>           
+				<class name="testCases.TC_011_AddCouponFreeShipping"/>	 
+				<class name="testCases.TC_012_AddCouponBuyXGetY"/> 
+			 <class name="testCases.TC_013_AddNewCustomCollection"/>  
+			<class name="testCases.TC_014_AddCollectionWithSubCollection"/> -->  <!-- throwing 404 Error for this test case  due to selecting Sub-Collection checkbox-->
+	<class name="testCases.TC_015_AddBrandCollection"/>
 
-		   
-		<class name="testCases.TC_008_Customer_SlidePagination"/>
+			
+				
+					 
+				
+                        
+				
+				
+				
+			
 			
 		</classes>
 		
 	</test>
 	
 </suite>
+
+
+
+
+<!--  Error obsrved
+org.openqa.selenium.NoSuchElementException
+org.openqa.selenium.StaleElementReferenceException
+org.openqa.selenium.NoSuchSessionException
+org.openqa.selenium.interactions.MoveTargetOutOfBoundsException 
+org.openqa.selenium.TimeoutException  
+org.openqa.selenium.json.JsonException
+java.lang.reflect.InvocationTargetException
+org.openqa.selenium.InvalidSelectorException
+java.lang.IllegalArgumentException
+java.lang.reflect.InvocationTargetException
+
+
+
+
+-->
+
+
 
 

@@ -26,6 +26,15 @@ public class Customer_Slide_Pagination extends BasePage{
 	@FindBy(xpath = "//button[@aria-label='Go to page 4']")
 	WebElement fourthPage;
 	
+	@FindBy(xpath = "//button[@aria-label='Go to page 5']")
+	WebElement fifthpage;
+	
+	@FindBy(xpath = "//button[@aria-label='Go to page 6']")
+	WebElement sixthpage;
+	
+	@FindBy(xpath = "//button[@aria-label='Go to page 7']")
+	WebElement seventhpage;
+	
 	public void clickCustomerButton() {
 		customerButton.click();
 	}
@@ -39,5 +48,16 @@ public class Customer_Slide_Pagination extends BasePage{
 	
 	public void clickfourthpage() {
 		fourthPage.click();
+	}
+	
+	public void clickfifthpage() {
+		fifthpage.click();
+	}
+	public void clicksixthpage() {
+		sixthpage.click();
+	}
+	 
+	public void clickseventhpage() {
+		seventhpage.click();
 	}
 }
