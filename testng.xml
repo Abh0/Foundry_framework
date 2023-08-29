@@ -9,15 +9,15 @@
 		
 	</listeners>
 	
-	<test thread-count="5" name="Test">
+	<test thread-count="1" name="Test">
 		
 		<parameter name ="browser" value="chrome" />
 		
 		<classes>
 			
-			<!--<class name="testCases.TC_001_getfreedemo_page"/>  
+		<!--	<class name="testCases.TC_001_getfreedemo_page"/>  
 				 	<class name="testCases.TC_002_SignIn_page"/>    
-			  	 <class name="testCases.TC_003_Login_Logout"/>     
+				 <class name="testCases.TC_003_Login_Logout"/>  
 			 		<class name="testCases.TC_004_AddNewUser"/>    
 				<class name="testCases.TC_005_AddNewOrder"/>     
 					 
@@ -25,23 +25,17 @@
 			 	    
          	 <class name="testCases.TC_007_CreateNewCustomer"/>  
 			 <class name="testCases.TC_008_Customer_SlidePagination"/>
-				 <class name="testCases.TC_009_AddNewCoupon"/>           
-				<class name="testCases.TC_011_AddCouponFreeShipping"/>	 
+				 <class name="testCases.TC_009_AddNewCoupon"/>  
+				 
+				  <class name="testCases.TC_010_AddcouponWithDiscountPer"/>
+				 <class name="testCases.TC_011_AddCouponFreeShipping"/>	 
 				<class name="testCases.TC_012_AddCouponBuyXGetY"/> 
 			 <class name="testCases.TC_013_AddNewCustomCollection"/>  
-			<class name="testCases.TC_014_AddCollectionWithSubCollection"/> -->  <!-- throwing 404 Error for this test case  due to selecting Sub-Collection checkbox-->
-	<class name="testCases.TC_015_AddBrandCollection"/>
+			<class name="testCases.TC_014_AddCollectionWithSubCollection"/> -->
 
-			
-				
-					 
-				
-                        
-				
-				
-				
-			
-			
+		
+	             <class name="testCases.TC_015_AddBrandCollection"/> 
+
 		</classes>
 		
 	</test>
@@ -49,8 +43,22 @@
 </suite>
 
 
+<!-- test case run using three different way below :
+ 1. pom.xml , click mvn test command and
+	2.command prompt cd: project path then mvn test or mvn clean test 
+		3.also using run.bat file 
+	       add simple file in eclipse and go to run.bat file local location and open in local notepad then write command
+	           cd C:\Users\101Reporters\eclipse-workspace\Foundry_framework  // project directory
+					mvn clean test                        // command
+	just click on run.bat file automatically open cmd and test case executed
 
 
+
+
+	 -->        
+
+
+ <!-- TC_014 : throwing 404 Error for this test case  due to selecting Sub-Collection checkbox-->
 <!--  Error obsrved
 org.openqa.selenium.NoSuchElementException
 org.openqa.selenium.StaleElementReferenceException
@@ -62,9 +70,6 @@ java.lang.reflect.InvocationTargetException
 org.openqa.selenium.InvalidSelectorException
 java.lang.IllegalArgumentException
 java.lang.reflect.InvocationTargetException
-
-
-
 
 -->
 

@@ -62,9 +62,13 @@ public class BaseClass {
 			
 			options.addArguments("--disable-save-password-bubble");
 			 options.addArguments("--disable-notifications");
+			 
+			 
 			options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
 			driver = new ChromeDriver(options);
 					
+			options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
+			
 		} else if (br.equalsIgnoreCase("firefox")) {
 			logger.info("...Launching Firefox browser...");
 			driver = new FirefoxDriver();

@@ -52,10 +52,11 @@ public void addNewBrandCollection() throws InterruptedException {
 
 				bcoll.clickOnAddProductButton();
 				bcoll.clickSearchProductForCollection();
-				//bcoll.pressDownArrayAfterClick();
-				
+				Thread.sleep(5000);
+				bcoll.pressDownArrayAfterClick();
+				Thread.sleep(5000);
 				bcoll.clickOnAddProductBtnAfterSelectingProduct();
-				
+				Thread.sleep(5000);
 				bcoll.clickFinalAddCollectionButton();
 				Thread.sleep(5000);
 				

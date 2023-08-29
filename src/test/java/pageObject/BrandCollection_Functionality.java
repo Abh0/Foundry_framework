@@ -91,17 +91,20 @@ public class BrandCollection_Functionality  extends BasePage{
 	
 	public void clickSearchProductForCollection() {
 		searchProductForColl.click();                        //click on search bar 
-		searchProductForColl.sendKeys(Keys.ARROW_DOWN);     // press down arrow of keyboard
-		searchProductForColl.sendKeys(Keys.ARROW_DOWN);             // press down arrow of keyboard
-		searchProductForColl.sendKeys(Keys.ARROW_DOWN);            // press down arrow of keyboard
-		searchProductForColl.sendKeys(Keys.ENTER);                     // press Enter key of keyboard
+//		searchProductForColl.sendKeys(Keys.ARROW_DOWN);     // press down arrow of keyboard
+//		searchProductForColl.sendKeys(Keys.ARROW_DOWN);             // press down arrow of keyboard
+//		searchProductForColl.sendKeys(Keys.ARROW_DOWN);            // press down arrow of keyboard
+//		searchProductForColl.sendKeys(Keys.ENTER);                     // press Enter key of keyboard
 		
 	}
 	
 	
-	
-
-
+	public void pressDownArrayAfterClick () {
+	searchProductForColl.sendKeys(Keys.ARROW_DOWN);     // press down arrow of keyboard
+	searchProductForColl.sendKeys(Keys.ARROW_DOWN);             // press down arrow of keyboard
+	searchProductForColl.sendKeys(Keys.ARROW_DOWN);            // press down arrow of keyboard
+	searchProductForColl.sendKeys(Keys.ENTER);  
+	}
 	
 	
 	public void clickOnAddProductBtnAfterSelectingProduct() {
