@@ -7,11 +7,11 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.net.SocketException;
-import java.net.SocketTimeoutException;
+
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.Random;
 import java.util.ResourceBundle;
 
 import javax.imageio.ImageIO;
@@ -24,6 +24,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -32,6 +33,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+
+import io.qameta.allure.Attachment;
 
 
 
@@ -121,14 +124,29 @@ public class BaseClass {
 		String generatedString = RandomStringUtils.randomAlphabetic(5);
 		String generatedNumber = RandomStringUtils.randomNumeric(5);
 		return (generatedString + generatedNumber);
+	}
+		
+	
+	
+	// for dynamically generated the text description
+	public String randomDescription(int length) {
+		String charSet = "abcd akash news paper";
+		StringBuilder randomText = new StringBuilder();
 
+		Random random = new Random();
+		for (int i = 0; i < length; i++) {
+			int randomIndex = random.nextInt(charSet.length());
+			char randomChar = charSet.charAt(randomIndex);
+			randomText.append(randomChar);
+		}
+
+		return randomText.toString();
 	}
 	
 	
 	
-	
 	// capture screenshot method if test case failed 
-	
+	@Attachment
 	public String captureScreen(String tname) throws IOException {
 
 		/*
@@ -185,11 +203,6 @@ public class BaseClass {
 	
 	 
 	 
-	 
-	 
-	 
-	 
-	 
 	
 	
 	
@@ -238,26 +251,10 @@ public class BaseClass {
 //	            }
 //	        }
 //	    }
-	}
+	
 
 
+}
 	
 	
 	
-	
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-
-

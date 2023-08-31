@@ -13,7 +13,7 @@ public class TC_014_AddCollectionWithSubCollection extends BaseClass{
 
 	
 	
-	@Test
+	@Test (priority = 14)
 public void addNewCollectionWith_SubCollection() throws InterruptedException {
 		
 		try {

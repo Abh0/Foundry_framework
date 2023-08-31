@@ -12,7 +12,7 @@ import testBase.BaseClass;
 public class TC_013_AddNewCustomCollection extends BaseClass {
 
 	
-	@Test
+	@Test (priority = 13)
 	public void addNewCollection_InFoundry() throws InterruptedException {
 		
 		try {
