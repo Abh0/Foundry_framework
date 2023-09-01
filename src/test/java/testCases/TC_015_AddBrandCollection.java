@@ -13,7 +13,7 @@ public class TC_015_AddBrandCollection extends BaseClass{
 
 	
 	
-	@Test
+	@Test(priority = 15)
 public void addNewBrandCollection() throws InterruptedException {
 		
 		try {

@@ -29,6 +29,9 @@
 			<class name="testCases.TC_013_AddNewCustomCollection"/>
 				<class name="testCases.TC_014_AddCollectionWithSubCollection"/> 
 			<class name="testCases.TC_015_AddBrandCollection"/>
+			<class name="testCases.TC_016_AddNewBlogs"/>
+			<class name="testCases.TC_017_DeleteBlogs"/>	 
+	             <class name="testCases.TC_018_EditBlog"/>	
 			
 			
 		</classes>
@@ -61,6 +64,11 @@
 			<class name="testCases.TC_013_AddNewCustomCollection"/>
 				<class name="testCases.TC_014_AddCollectionWithSubCollection"/> 
 			<class name="testCases.TC_015_AddBrandCollection"/>
+			<class name="testCases.TC_016_AddNewBlogs"/>
+<class name="testCases.TC_017_DeleteBlogs"/>	 
+	             <class name="testCases.TC_018_EditBlog"/>	
+			
+			
 		</classes>
 	</test>
 		
@@ -94,6 +102,11 @@
 		<class name="testCases.TC_013_AddNewCustomCollection"/>
 		<class name="testCases.TC_014_AddCollectionWithSubCollection"/> 
 		<class name="testCases.TC_015_AddBrandCollection"/>
+			 <class name="testCases.TC_016_AddNewBlogs"/>
+					<class name="testCases.TC_017_DeleteBlogs"/>	 
+	             <class name="testCases.TC_018_EditBlog"/>	
+		
+		
 		
 			</classes>
 		 </test>           

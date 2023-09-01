@@ -15,9 +15,10 @@
 		
 		<classes>
 			
-		<!--	<class name="testCases.TC_001_getfreedemo_page"/>  
+			<!--
+				<class name="testCases.TC_001_getfreedemo_page"/> 
 				 	<class name="testCases.TC_002_SignIn_page"/>    
-				 <class name="testCases.TC_003_Login_Logout"/>  
+		 <class name="testCases.TC_003_Login_Logout"/>  
 			 		<class name="testCases.TC_004_AddNewUser"/>    
 				<class name="testCases.TC_005_AddNewOrder"/>     
 					 
@@ -26,16 +27,21 @@
          	 <class name="testCases.TC_007_CreateNewCustomer"/>  
 			 <class name="testCases.TC_008_Customer_SlidePagination"/>
 				 <class name="testCases.TC_009_AddNewCoupon"/>  
-				 
-				  <class name="testCases.TC_010_AddcouponWithDiscountPer"/>
+							  <class name="testCases.TC_010_AddcouponWithDiscountPer"/>
 				 <class name="testCases.TC_011_AddCouponFreeShipping"/>	 
 				<class name="testCases.TC_012_AddCouponBuyXGetY"/> 
 			 <class name="testCases.TC_013_AddNewCustomCollection"/>  
-			<class name="testCases.TC_014_AddCollectionWithSubCollection"/> -->
-
-		
-	             <class name="testCases.TC_015_AddBrandCollection"/> 
-
+			<class name="testCases.TC_014_AddCollectionWithSubCollection"/> 
+			  <class name="testCases.TC_015_AddBrandCollection"/> 
+ 				<class name="testCases.TC_016_AddNewBlogs"/> 
+ 				
+ 				<class name="testCases.TC_017_DeleteBlogs"/> 
+				 
+	          <class name="testCases.TC_018_EditBlog"/>	 -->
+				<class name="testCases.TC_019_FindBrokenLink"/>
+	             
+	             	
+	             	
 		</classes>
 		
 	</test>
@@ -52,8 +58,20 @@
 					mvn clean test                        // command
 	just click on run.bat file automatically open cmd and test case executed
 
+Note: for Generate Allure Report Add allure-testng dependencies
+       set path :This PC> Properties> Advanced system setting> env variable > System variable>
+         CMD command is allure serve  : allure serve .allure result file location 
+use : https://docs.qameta.io/allure/#_installing_a_commandline
 
+** below annotoation use for customize allure report  ***
 
+	@Description("Verify sign in is successfully") : description
+	@Epic("FE001")                              : epic (same as agile terminology)
+	@Feature("feaure 1 : sign In")               : feature (same as agile terminology)       
+	@Story("story: sign In done")                 : story (same as agile terminology)
+	@Step("username and password valid ")        
+	@Severity(SeverityLevel.CRITICAL)              : to show severity of the testcase ,critical, mior blocer, normal
+   @Attachment                                      : use in BaseClass while run screenshot method 
 
 	 -->        
 
@@ -70,6 +88,14 @@ java.lang.reflect.InvocationTargetException
 org.openqa.selenium.InvalidSelectorException
 java.lang.IllegalArgumentException
 java.lang.reflect.InvocationTargetException
+
+
+	
+
+	
+
+	https://github.com/Abh0/Foundry_Aarrrmor.com.git
+
 
 -->
 
