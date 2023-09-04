@@ -15,10 +15,10 @@
 		
 		<classes>
 			
-			<!--
+			
 				<class name="testCases.TC_001_getfreedemo_page"/> 
 				 	<class name="testCases.TC_002_SignIn_page"/>    
-		 <class name="testCases.TC_003_Login_Logout"/>  
+		<!-- <class name="testCases.TC_003_Login_Logout"/>   -->
 			 		<class name="testCases.TC_004_AddNewUser"/>    
 				<class name="testCases.TC_005_AddNewOrder"/>     
 					 
@@ -37,8 +37,11 @@
  				
  				<class name="testCases.TC_017_DeleteBlogs"/> 
 				 
-	          <class name="testCases.TC_018_EditBlog"/>	 -->
-				<class name="testCases.TC_019_FindBrokenLink"/>
+	       <class name="testCases.TC_018_EditBlog"/>	 
+				 <!-- <class name="testCases.TC_019_FindBrokenLink"/>  -->
+
+				 	
+			
 	             
 	             	
 	             	
@@ -47,6 +50,16 @@
 	</test>
 	
 </suite>
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- test case run using three different way below :
@@ -77,7 +90,8 @@ use : https://docs.qameta.io/allure/#_installing_a_commandline
 
 
  <!-- TC_014 : throwing 404 Error for this test case  due to selecting Sub-Collection checkbox-->
-<!--  Error obsrved
+<!--  
+	Error obsrved
 org.openqa.selenium.NoSuchElementException
 org.openqa.selenium.StaleElementReferenceException
 org.openqa.selenium.NoSuchSessionException
@@ -88,15 +102,93 @@ java.lang.reflect.InvocationTargetException
 org.openqa.selenium.InvalidSelectorException
 java.lang.IllegalArgumentException
 java.lang.reflect.InvocationTargetException
+-->
 
 
 	
+	<!--
 
 	
+
+	 github token  : https://github.com/settings/tokens
+	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
 
 	https://github.com/Abh0/Foundry_Aarrrmor.com.git
+	https://github.com/AARRRmor-Digital-Services/foundry-test.git
 
 
+	
+
+ Git Command :  
+1. git init : inittialise the repo , only one time
+2. cd path set
+3. git config -global user.name Abhishek  				 (double hyphen is there before global )
+4. git config -global user.email abhishekbhndr114@gmail.com  (double hyphen is there before global )
+5. git status
+6. git add -a : for all 
+7. git add filename.extension : specific file
+8. git add *.java  : particular extension file 
+9. git commit -m "commit msg"
+10. git remote add origin "github repo url"
+11. git push origin master
+12. create token in github : profile- setting- developer setting - create new token - enter note.
+13. git pull "repo url" : pull any remote file into local editor and update it and again push into remote.
+14.									
+	
+	
+
+	
+
+     Git command : add same project in new repo
+	1.git clone <companyrepo_url>
+	2.cd your project directory path
+	3.git remote add personal <personal repo_url>
+	4.git push personal
+-->
+
+	
+	
+	
+	
+	
+	
+	
+	<!--
+		  
+	::: jenkins integration ::::
+	1. download jenkins.war file and keep file in c drive
+		https://www.jenkins.io/download/     Download Jenkins 2.414.1 LTS for: Generic  java package (.war)
+	2. open cmd through in jenkins.war folder	
+     3. use command: java -jar jenkins.war -httpPort=8081  : after jenkins will start and running then dont  closed cmd window
+	4. open http://localhost:8081 url in chrome
+		jenkins username : admin and password:1947c58c49914b358a006d556c89e3f7
+		 is avaibale in local this location * C:\Users\101Reporters\.jenkins\secrets\initialAdminPassword
+		5. open jenkins  dashboard (need to add download plugins 1. Git, 2. Github, 3. maven integration)
+		   click on manage jenkins
+           click on manage plugins
+           Avaible settings
+		  Search pluging and install (git, github, maven integration)
+
+	
+6. then SET PATH : agian go to manage jenkins	 (set path in jenkins dashboard only)  http://localhost:8081/manage/configureTools/
+	 click on   Global tool configuration 	
+		  set path JDK : name and java.HOME *C:\Program Files\Java\jdk-17.0.4.1*
+                   git path : name and path *C:\Program Files\Git\bin\git.exe*
+	                 maven path : name path *C:\apache-maven-3.9.4  *             		
+ 7. click on New Item+ 
+		     Enter item name : foundry.aarrrmor_project
+		      select maven project.
+		      click on OK
+		   
+http://localhost:8081/job/foundry.aarrrmor_Project/8/       : jenkins url
+		
+	-->
+	
+	
+	
+	
+<!-- 
+C:\Users\101Reporters\eclipse-workspace\Foundry_Aarrrmor.com 
 -->
 
 
