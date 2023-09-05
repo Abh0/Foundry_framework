@@ -32,6 +32,8 @@
 			<class name="testCases.TC_016_AddNewBlogs"/>
 			<class name="testCases.TC_017_DeleteBlogs"/>	 
 	             <class name="testCases.TC_018_EditBlog"/>	
+	             	 <!-- <class name="testCases.TC_019_FindBrokenLink"/>  -->
+	             	<class name="testCases.TC_020_add_virtual_productg"/>
 			
 			
 		</classes>
@@ -67,6 +69,8 @@
 			<class name="testCases.TC_016_AddNewBlogs"/>
 <class name="testCases.TC_017_DeleteBlogs"/>	 
 	             <class name="testCases.TC_018_EditBlog"/>	
+	             	 <!-- <class name="testCases.TC_019_FindBrokenLink"/>  -->
+	             	<class name="testCases.TC_020_add_virtual_productg"/>
 			
 			
 		</classes>
@@ -83,7 +87,8 @@
 	
 	
 		
-		<!--  
+		<!-- 
+			 
 		<test name="EdgeTest"> 
 		<parameter name ="browser" value="edge" /> 
 		<classes> 
@@ -103,10 +108,15 @@
 		<class name="testCases.TC_014_AddCollectionWithSubCollection"/> 
 		<class name="testCases.TC_015_AddBrandCollection"/>
 			 <class name="testCases.TC_016_AddNewBlogs"/>
-					<class name="testCases.TC_017_DeleteBlogs"/>	 
-	             <class name="testCases.TC_018_EditBlog"/>	
+					<class name="testCases.TC_017_DeleteBlogs"/>	
+			 
+	              <class name="testCases.TC_018_EditBlog"/>	
+	             <class name="testCases.TC_019_FindBrokenLink"/>
+			<class name="testCases.TC_020_add_virtual_productg"/>
 		
 		
+		
+				
 		
 			</classes>
 		 </test>           
