@@ -1,6 +1,8 @@
 package testCases;
 
 import java.io.IOException;
+import java.net.SocketException;
+import java.util.NoSuchElementException;
 
 import org.testng.annotations.Test;
 
@@ -12,7 +14,7 @@ import testBase.BaseClass;
 public class TC_018_EditBlog  extends BaseClass {
 
 	@Test(priority = 18)
-	public void editExistingBlog() throws InterruptedException {
+	public void editExistingBlog() throws InterruptedException, SocketException {
 			
 			try {
 					Home_page hp = new Home_page(driver);
@@ -26,8 +28,8 @@ public class TC_018_EditBlog  extends BaseClass {
 					
 					Add_Blogs_Functionality ble = new Add_Blogs_Functionality(driver);
 					ble.clickOnBlogButtonLeftSide();
-					ble.clickOnSlidePagination();
-					ble.clickOnAnyBlog();
+					ble.clickOnSlidePagination();  // second page
+					ble.clickOnAnyBlog();  //click on any blog
 					Thread.sleep(3000);
 					
 					
@@ -62,7 +64,12 @@ public class TC_018_EditBlog  extends BaseClass {
 			
 					
 					
-			} catch (Exception e) {
+			} catch (NoSuchElementException e) {
+				e.printStackTrace();
+				
+			}
+			
+			catch (Exception e) {
 				e.printStackTrace();
 				
 			}
