@@ -93,7 +93,11 @@ public class Add_Blogs_Functionality extends BasePage {
 	WebElement  yesPublishedButton;
 	
 	//click on any blog for edit
+<<<<<<< HEAD
 	@FindBy(xpath = "//tbody/tr[2]/td[3]")
+=======
+	@FindBy(xpath = "//p[contains(text(),'ctnyjKCDfvF0fLE92EHO8nIbvEfa9xP6Xdgv3tosFCbPUYRquF')]")
+>>>>>>> 6808d8c867a5cb7a8793f541ef6989a55d7a3017
 	WebElement openAnyBlog ;
 	
 	//Action Methods

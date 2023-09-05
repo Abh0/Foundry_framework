@@ -1,8 +1,11 @@
 package testCases;
 
 import java.io.IOException;
+<<<<<<< HEAD
 import java.net.SocketException;
 import java.util.NoSuchElementException;
+=======
+>>>>>>> 6808d8c867a5cb7a8793f541ef6989a55d7a3017
 
 import org.testng.annotations.Test;
 
@@ -14,7 +17,11 @@ import testBase.BaseClass;
 public class TC_018_EditBlog  extends BaseClass {
 
 	@Test(priority = 18)
+<<<<<<< HEAD
 	public void editExistingBlog() throws InterruptedException, SocketException {
+=======
+	public void editExistingBlog() throws InterruptedException {
+>>>>>>> 6808d8c867a5cb7a8793f541ef6989a55d7a3017
 			
 			try {
 					Home_page hp = new Home_page(driver);
@@ -28,8 +35,13 @@ public class TC_018_EditBlog  extends BaseClass {
 					
 					Add_Blogs_Functionality ble = new Add_Blogs_Functionality(driver);
 					ble.clickOnBlogButtonLeftSide();
+<<<<<<< HEAD
 					ble.clickOnSlidePagination();  // second page
 					ble.clickOnAnyBlog();  //click on any blog
+=======
+					ble.clickOnSlidePagination();
+					ble.clickOnAnyBlog();
+>>>>>>> 6808d8c867a5cb7a8793f541ef6989a55d7a3017
 					Thread.sleep(3000);
 					
 					
@@ -64,12 +76,16 @@ public class TC_018_EditBlog  extends BaseClass {
 			
 					
 					
+<<<<<<< HEAD
 			} catch (NoSuchElementException e) {
 				e.printStackTrace();
 				
 			}
 			
 			catch (Exception e) {
+=======
+			} catch (Exception e) {
+>>>>>>> 6808d8c867a5cb7a8793f541ef6989a55d7a3017
 				e.printStackTrace();
 				
 			}
