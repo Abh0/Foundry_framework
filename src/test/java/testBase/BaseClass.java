@@ -39,6 +39,7 @@ import io.qameta.allure.Attachment;
 
 
 public class BaseClass {
+	
 
 	public static WebDriver driver;
 	public Logger logger;

@@ -38,13 +38,13 @@ public class TC_019_FindBrokenLink extends BaseClass {
 				
 				
 					
-<<<<<<< HEAD
-=======
+
+
 					String homepage = rb.getString("appURL") ;
 					String url = rb.getString("signinURL");
 					HttpsURLConnection huc = null; 
 					int respcode = 200; 
->>>>>>> 6808d8c867a5cb7a8793f541ef6989a55d7a3017
+
 					
 
 					

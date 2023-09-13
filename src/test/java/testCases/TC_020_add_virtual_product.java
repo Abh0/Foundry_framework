@@ -14,10 +14,12 @@ public class TC_020_add_virtual_product  extends BaseClass{
 
 	
 	
+	
+	
 	@Test(priority = 20)
 	public void addVirtualProduct() throws InterruptedException, SocketException {
 			
-			try {
+		
 					Home_page hp = new Home_page(driver);
 					hp.clickSignIn();
 
@@ -25,6 +27,7 @@ public class TC_020_add_virtual_product  extends BaseClass{
 					sng7.enterEmailId(rb.getString("email"));
 					sng7.enterPassword(rb.getString("password"));
 					sng7.clickOnLoginbtn();
+		
 					
 					Variant_Product_functionality vp = new Variant_Product_functionality(driver);
 					vp.clickOnProductButtonLeftSide();
@@ -101,13 +104,10 @@ public class TC_020_add_virtual_product  extends BaseClass{
 					vp.enterProductMetaDesc(rb.getString("metaDescription"));
 					
 					
-					
 					vp.clickOnPublishButton();
 					Thread.sleep(5000);
 					
-			}catch (Exception e ) {
-				e.printStackTrace();
-				}
+			
 			
 			}
 	

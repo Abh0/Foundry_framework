@@ -67,11 +67,12 @@ public class OrderFunctionality extends BasePage{
 	@FindBy(xpath = "//button[@tabindex='0' and @class='MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiLoadingButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-gu5yxk'] ")
 	WebElement addButton;
 	
+	@FindBy(xpath = "(//div[@class='MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-182didf'])[2]")
+	WebElement secondDropdown;
 	
 	
-	
-	
-	
+	@FindBy(xpath = "(//li[@class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters dropdown-item css-2iy9rc'])[3]")
+	WebElement processingDropdownvalue;
 
 	
 	
@@ -131,5 +132,16 @@ public class OrderFunctionality extends BasePage{
 		    Actions act = new Actions(driver);
 		    act.moveToElement(addButton).click().perform();
 		}
-	  
+
+	   public void clickOnSecondDropdown() {
+		   secondDropdown.click();
+	}
+	   
+	   
+	   public void selectProcessingStatus() {
+		   processingDropdownvalue.click();
+	}
+	   
+	   
+	   
 }

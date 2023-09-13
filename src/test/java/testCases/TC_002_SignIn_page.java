@@ -21,6 +21,13 @@ public class TC_002_SignIn_page extends  BaseClass {
 
 	
 	
+	
+	
+	
+	
+	
+	
+	
 	@Test(priority = 2, groups={"Regression","Foundry_Main"})
 	
 	//Customization Allure report using this below annotation (allure testng <dependencies)
@@ -30,7 +37,8 @@ public class TC_002_SignIn_page extends  BaseClass {
 	@Story("story: sign In done")
 	@Step("username and password valid ")
 	@Severity(SeverityLevel.CRITICAL)
-	public void page_SignIn() {
+ 	public void page_SignIn() {
+		
 try {
 		Home_page hp = new Home_page(driver);
 		logger.info("start of TC_002_SignIn_page...... ");

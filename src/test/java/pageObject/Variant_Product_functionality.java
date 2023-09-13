@@ -1,6 +1,6 @@
 package pageObject;
 
-import javax.xml.xpath.XPath;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -107,7 +107,6 @@ public class Variant_Product_functionality extends BasePage{
 	
 	@FindBy(xpath = "//input[@name='productshippingregion']")
 	WebElement shippingRegion;
-	
 	
 	
 	//search engine optimization: product meta title
