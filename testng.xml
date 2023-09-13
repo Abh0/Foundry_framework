@@ -37,15 +37,18 @@
  				
  				 <class name="testCases.TC_017_DeleteBlogs"/> 
 				 
-	       <class name="testCases.TC_018_EditBlog"/>	 -->
-	       	
+	              <class name="testCases.TC_018_EditBlog"/>	 
 	       	 
-				 <!-- <class name="testCases.TC_019_FindBrokenLink"/>  -->
-
+				      <class name="testCases.TC_019_FindBrokenLink"/>-->
+				      	
+				      	
+				      	
 				 
  			 <class name="testCases.TC_020_add_virtual_product"/>
 				 
-				 	
+				 <!--	 <class name="testCases.TC_021_ChangeStatusOf_ORDER"/>
+
+				 	  <class name="testCases.TC_022_BulkAction_Apply"/>-->
 			
 	             
 	             	
