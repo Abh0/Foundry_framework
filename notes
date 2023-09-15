@@ -1,0 +1,143 @@
+Q. locators => id, name, xpath, tagname, cssselector, linktext , partial linktext, class
+Q. Assert in testng => Assert is like verification , we can check the Actual and expected things are match or not.
+                       => We are using hard assert and soft Assert.
+  HArd Assertion: test has stop after session has fail . it will stop immiditely .
+  In hard assertion : Assert.assertTrue()
+                        Assert.assertFalse()
+                            Assert.assertEquls()
+  Soft Assertion: test or session has stop and fail  then it will proceed rest of the statement.
+  Q. Annotation in testng => 
+  @Test		
+       @Beforemethod @Aftermethod
+       @Beforeclass @Afterclass
+       @BeforeTest  @AfterTest
+       @BeforeSuite @AfterSuite
+       
+       ============================================================================
+  Q. without using sendkeys enter name in text field 
+  
+  => 1. Is there a way to type in a textbox without using sendKeys()?
+you can use Javascript Executer to input text into a text box without using sendKeys() method:
+// Initialize JS object
+JavascriptExecutor JS = (JavascriptExecutor)webdriver;
+// Enter username
+JS.executeScript("document.getElementById('User').value='Abha_Rathour'");
+// Enter password
+JS.executeScript("document.getElementById('Password').value='password123'");
+
+
+
+=====================================================================================
+Q. 2. How to select a value from a dropdown in Selenium WebDriver?
+Select select = new Select(driver.findElement(By.id("abcd")));
+select.selectByVisibleText()/deselectByVisibleText(); - selects/deselects an option by its displayed text
+select.selectByValue()/deselectByValue(); - selects/deselects an option by the value of its "value" attribute
+select.selectByIndex()/deselectByIndex(); - selects/deselects an option by its index
+select.isMultiple(); - returns TRUE if the drop-down element allows multiple selection at a time; FALSE if
+otherwise
+select.deselectAll(); - deselects all previously selected options
+
+=====================================================================================
+Q 5. How to set browser window size in Selenium?
+Selenium WebDriver allows resizing and maximizing window natively from its API. We use 'Dimension' class to
+resize the window.
+WebDriver driver = new FirefoxDriver();
+driver.navigate().to("http://google.co.in");
+System.out.println(driver.manage().window().getSize());
+Dimension d = new Dimension(420,600);
+//Resize the current window to the given dimension
+driver.manage().window().setSize(d);
+
+======================================================================
+Q 6. When do we use findElement() and findElements()?
+findElement():
+syntax: WebElement elementName = driver.findElement(By.LocatorStrategy("LocatorValue"));
+Returns the first most web element if there are multiple web elements found with the same locator
+Throws exception NoSuchElementException if there are no elements matching the locator strategy
+It will only find one web element
+Indexing is not Applicable
+findElements();
+syntax: List<WebElement> elementName = driver.findElements(By.LocatorStrategy("LocatorValue"));
+Returns a list of web elements
+Returns an empty list if there are no web elements matching the locator strategy
+It will find a collection of elements whose match the locator strategy.
+Each Web element is indexed with a number starting from 0 just like an array
+
+
+=================================================================================
+Q. 10. How to login to any site if it is showing an Authentication Pop-Up for Username and Password?
+Approach 1: Handling Authentication/Login Popup Window using Selenium WebDriver
+By passing user credentials in URL. Its simple, append your username and password with the URL.
+e.g., http://Username:Password@SiteURL
+http://rajkumar:myPassword@www.softwaretestingmaterial.com
+here, Username is rajkumar
+Password is myPassword
+SiteURL is www.softwaretestingmaterial.com
+Sample code:
+String URL = "http://" + rajkumar + ":" + myPassword + "@" + www.softwaretestingmaterial.com;
+driver.get(URL);
+Alert alert = driver.switchTo().alert();
+alert.accept();
+Approach 2: Handling Authentication/Login Popup Window using Selenium WebDriver
+By using AutoIt, we could handle authentication pop up.
+Sample AutoIT Script:
+WinWaitActivate("Authentication Required","")
+Send("rajkumar{TAB}myPassword{ENTER}")
+Sample Java Code:
+public static void login(String email, String password) throws Exception{
+driver.get(URL);
+//Passing the AutoIt Script here
+Runtime.getRuntime().exec("D:\\Selenium\\workspace\\AutoItFiles\\ExecutableFiles\\FirefoxBrowser.exe");
+driver.findElement
+loginpage.setEmail(email);
+loginpage.setPassword(password);
+loginpage.clickOnLogin();
+}
+Approach 3: Handling Authentication/Login Popup Window using Selenium WebDriver
+By using Alerts in Selenium, we could handle authentication pop up.
+driver.switchTo().alert();
+//Selenium-WebDriver Java Code for entering Username & Password as below:
+driver.findElement(By.id("userID")).sendKeys("userName");
+driver.findElement(By.id("password")).sendKeys("myPassword");
+driver.switchTo().alert().accept();
+driver.switchTo().defaultContent();
+}
+=================================================================================
+
+Q. 10) What are the verification points available in Selenium?
+Different types of verification points in Selenium are:
+
+To check element is present
+
+if(driver.findElements(By.Xpath(“value”)).size()!=0){
+System.out.println(“Element is present”);
+}else{
+System.out.println(“Element is absent”);
+}
+To check element is visible
+
+if(driver.findElement(By.Id(“submit”)).isDisplayed()){
+System.out.println(“Element is visible”);
+}else{
+System.out.println(“Element is visible”);
+}
+To check element is enabled
+
+if(driver.findElement(By.Id(“submit”)).isEnabled()){
+System.out.println(“Element is enabled”);
+}else{
+System.out.println(“Element is disabled”);
+}
+To check text is present
+
+if(driver.getPageSource().contains(“Text”)){
+System.out.println(“Text is present”);
+}else{
+System.out.println(“Text is not present”);
+}
+=======================================================================================
+
+
+
+
+
