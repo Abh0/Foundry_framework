@@ -2,7 +2,9 @@ package testCases;
 
 import java.io.IOException;
 import java.net.SocketException;
+import java.time.Duration;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import pageObject.Application_Sign_inPage;
@@ -58,7 +60,7 @@ public class TC_020_add_virtual_product  extends BaseClass{
 					vp.enterVariantProductName(rb.getString("vproductname"));
 					vp.enterVariantProductOptions1(rb.getString("vproductdesc"));
 					
-					vp.clickOnAddMoreVariantButton();
+					//vp.clickOnAddMoreVariantButton();
 				//	vp.enterVariantProductOptions2(rb.getString("vproductdesc2"));
 					
 					vp.clickOnGenerateVariantButton();
@@ -81,6 +83,10 @@ public class TC_020_add_virtual_product  extends BaseClass{
 					vp.enterRegularPrice(rb.getString("regularpr"));
 					vp.enterSalePrice(rb.getString("salepr"));
 					
+					
+					WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
+				
+
 					vp.clickOnFeatureButton();
 					
 					
@@ -92,6 +98,8 @@ public class TC_020_add_virtual_product  extends BaseClass{
 					vp.enterProductSku(randomString());
 					vp.enterProductStock(randomNumber());
 					Thread.sleep(5000);
+					
+					WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10)); 
 					vp.clickOnShippingButton();
 					
 					vp.enterProductweight(rb.getString("weight"));

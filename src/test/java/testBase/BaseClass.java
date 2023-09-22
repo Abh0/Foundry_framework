@@ -1,4 +1,6 @@
-package testBase;
+//Learn : Dynamic Polymorphism (Webdriver driver = new Chromedriver();)
+
+package testBase;    
 
 import java.awt.Color;
 import java.awt.BasicStroke;
@@ -39,8 +41,10 @@ import io.qameta.allure.Attachment;
 
 
 public class BaseClass {
+	//why we declare driver as a static here => If we use static keyword here so it execute test case sequentially 
+	// if we not use static then its execute parallely  and only one test case executed and pass for remaining test cases its show nullpointerexeception
+	//But if you want to declare driver object as static you can do. By defining local variable of driver object in each class.
 	
-
 	public static WebDriver driver;
 	public Logger logger;
 	public ResourceBundle rb;
@@ -68,6 +72,11 @@ public class BaseClass {
 			 options.addArguments("--disable-notifications");
 			 
 			 
+			// ChromeOptions options = new ChromeOptions();
+		      //  options.addArguments("--incognito");
+			 
+			 
+			 
 			options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
 			driver = new ChromeDriver(options);
 					
@@ -75,8 +84,8 @@ public class BaseClass {
 			
 		} else if (br.equalsIgnoreCase("firefox")) {
 			logger.info("...Launching Firefox browser...");
-			driver = new FirefoxDriver();
-
+			driver = new FirefoxDriver();   //Firefox is a java class and its implement with the Webdriver interface.
+                                                //driver : "driver" is the object reference name
 		} else if (br.equalsIgnoreCase("edge")) {
 			logger.info("...Launching E browser...");
 			EdgeOptions options = new EdgeOptions();

@@ -73,7 +73,7 @@ public class Variant_Product_functionality extends BasePage{
 	WebElement salePrice;
 	
 	//click on feature button
-	@FindBy (xpath = "//button[@class='MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1q8p1wn']")
+	@FindBy (xpath = "(//button[@class='MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1q8p1wn'])[1]")
 	WebElement featureButton;
 	
 	@FindBy(xpath = "(//input[@name='productfeature'])[1]")
@@ -90,7 +90,7 @@ public class Variant_Product_functionality extends BasePage{
 	WebElement pdSTOCK;
 	
 	//shipping details
-	@FindBy(xpath = "//button[@class='MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1q8p1wn']")
+	@FindBy(xpath = "(//button[@class='MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1q8p1wn'])[3]")  //
 	WebElement shippingButton;
 	
 	@FindBy(xpath = "//input[@name='productweight']")
@@ -213,7 +213,8 @@ public class Variant_Product_functionality extends BasePage{
 	
 	
 	public void clickOnShippingButton() {
-		shippingButton.click();
+		Actions action = new Actions(driver);
+		action.moveToElement(shippingButton).click().perform();
 	} 
 	public void enterProductweight(String weight) {
 		productweight.sendKeys(weight);
@@ -240,7 +241,8 @@ public class Variant_Product_functionality extends BasePage{
 		productMetaDesc.sendKeys(descmeta);
 	}
 	public void clickOnPublishButton() {
-		publishButton.click();
+		Actions action = new Actions(driver);
+		action.moveToElement(publishButton).click().perform();
 	}
 	
 }

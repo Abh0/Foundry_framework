@@ -36,21 +36,10 @@ public class TC_019_FindBrokenLink extends BaseClass {
 	
 				
 				
-				
-					
-
-
-					String homepage = rb.getString("appURL") ;
-					String url = rb.getString("signinURL");
-					HttpsURLConnection huc = null; 
-					int respcode = 200; 
-
-					
-
-					
 					Misc_Functionality mfun = new Misc_Functionality (driver) ;
 					
-					mfun.verifyLogo();
+				mfun.verifyLogo();
+					mfun.brokenLinks();
 					
 					
 		} catch (Exception e) {
