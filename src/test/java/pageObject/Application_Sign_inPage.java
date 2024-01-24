@@ -56,11 +56,6 @@ public class Application_Sign_inPage extends BasePage {
 	
 	
 	
-	
-	
-	
-	
-	
 	// Action method
 	public void enterEmailId(String useremail) {
 		txtLoginEmailid.sendKeys(useremail);

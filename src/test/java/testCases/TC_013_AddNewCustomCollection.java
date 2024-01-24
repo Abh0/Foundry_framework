@@ -42,7 +42,7 @@ public class TC_013_AddNewCustomCollection extends BaseClass {
 				Thread.sleep(5000);
 				
 				String autoItScriptPath = "C:\\Users\\101Reporters\\Documents\\AutoIt Scripts\\Autoit collection.exe";  // path of .exe file 
-				String imagePath = "C:\\Users\\101Reporters\\Documents\\Nayaami dummy\\basket 2.webp";  
+				String imagePath = "C:\\Users\\101Reporters\\Documents\\Dummy product\\pd1";  
 
 				// path of image , which we want to upload
 				// C:\\Users\\101Reporters\\Documents\\Dummy image\\pd91.jpg

@@ -7,13 +7,20 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_020_add_virtual_product">
+      <class name="testCases.TC_005_AddNewOrder">
         <methods>
           <include name="tearDown"/>
-          <include name="addVirtualProduct"/>
+          <include name="addNewOrder_InFoundry"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC_020_add_virtual_product -->
+      </class> <!-- testCases.TC_005_AddNewOrder -->
+      <class name="testCases.TC_003_Login_Logout">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="page_Logoutbtn" invocation-numbers="0 1 2 3 4 5"/>
+        </methods>
+      </class> <!-- testCases.TC_003_Login_Logout -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

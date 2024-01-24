@@ -116,7 +116,6 @@ public class Collection_Functionality extends BasePage {          //Add custom c
 	
 	
 	
-	
 //	public void pressDownArrayAfterClick() {
 //		searchProductForColl.sendKeys(Keys.ARROW_DOWN);
 //		searchProductForColl.sendKeys(Keys.ARROW_DOWN);

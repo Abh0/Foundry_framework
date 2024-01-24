@@ -136,6 +136,184 @@ System.out.println(“Text is present”);
 System.out.println(“Text is not present”);
 }
 =======================================================================================
+Q. 13) How to login into any site if it is showing an authentication pop-up for
+Username and Password?
+To work with Basic Authentication pop-up (which is a browser dialogue
+window), you just need to send the user name and password along with the
+application URL.
+
+Syntax:
+driver.get("http://admin:admin@yoururl.com");
+=====================================================================================
+Q. is a Firefox driver is a class or an interface?
+=> firefox is a java class and its implement the webdriver interface. (learne Dynamic polymorphism)
+     Chromedriver : java class
+     Webdriver : is the Interface (WebDriver is an interface in Java.)
+     driver : driver is the object or interface reference variable name
+     
+ =====================================================================================    
+Q. What is super interface of webdriver?
+=> SearchContext   
+=====================================================================================
+Q.   what if we write : Chromedriver driver= new Chromedriver(); instead of Webdriver driver = new Chromedriver();
+=>  chatGPT Answer :
+If you write chromedriver driver = new Chromedriver(); instead of WebDriver driver = new ChromeDriver();,
+     you would encounter a compilation error in Java.
+
+Here's why:
+Case Sensitivity: In Java, class and interface names are case-sensitive. The correct class name is "ChromeDriver" with a capital "C," and the correct interface name is "WebDriver" with a capital "W."
+Data Types: When declaring variables, the variable name should come after the data type. In your incorrect statement, you're trying to use "chromedriver" and "Chromedriver" as data types, which is not valid.
+To create a new instance of the ChromeDriver class and assign it to a WebDriver variable, you should use the correct capitalization and data types, like this:
+WebDriver driver = new ChromeDriver();
+This statement correctly declares a variable named "driver" of type "WebDriver" and initializes it with a new instance of the "ChromeDriver" class.
+=====================================================================================================================
+Q. Why we get StaleElemenException? (what is HTML Dom)
+=> It occurs when an element on a web page becomes "stale" or no longer valid while an operation is being performed on it.
+=====================================================================================================================
+Q. staic and dynamic waits in selenium 
+=> Static wait are eg. : Threat.sleep(3000);
+    Dynamic wait Statement are : 
+   1. Implicit wait :
+  2.   explicit wait:
+   3.  fluent waits :
+   4.  PageLoadTimeOut: 
+=====================================================================================================================
+Q. Difference between  driver.get("URL"); and driver.navigate().to("URL");
+=>  driver.get("URL");  is more efficient and it will wait till whole page load.
+    driver.navigate().to("URL");   page not fully loaded.
+
+=====================================================================================================================
+
+Q. forward backward and refresh 
+=> driver,navigate().forward();   driver,navigate().backward();  driver,navigate().Refresh();
+
+=====================================================================================================================
+Q.differenced between  getWindowHandle();  and getWindowHandles();
+
+=====================================================================================================================
+Q. driver.close(); => its closed the current webdriver instance window 
+ driver.quite(); => All browser will be closed at a time
+ =====================================================================================================================
+ Q. driver.findelement(); => only single webelement and
+  driver.FindElements(by.xpath("xpath here"));  => four button single element list (interact multiple link (a html tag)or button )
+  And return type of FindElements is List oject 
+  List<WebElement> list = driver.findElements(By.xpath("xpath here"))
+  
+
+  
+  =====================================================================================================================
+  
+  Q. isSelected() isEnabled() isDisplay()   ?
+  
+  =====================================================================================================================
+  Q. how to capture screenshot in selenium ?
+  => takeScreenshot interface   
+  
+  
+  =====================================================================================================================
+  Q. mouse hover using Actions class 
+       
+  =>   Actions ac = new Actions(driver)
+      ac.MovetoElement("xpath").build().perform();
+  =====================================================================================================================
+  Q. How can we handle web-based popup?
+  => windowHandler Api 
+  =====================================================================================================================
+  Q. How to handle hidden element?
+  => javaScriptExecutor(driver).executeScripts("document.getElementByClassName(Elementlocator).click()");
+  =====================================================================================================================
+  Q. How to run selenium webdriver test from command line?
+  => 	cd c
+        c: javac A.java
+        c: java A.java
+        
+  =====================================================================================================================
+  Q. how to handle Frame ? switch on frame
+  =====================================================================================================================
+  Q. how to connect with database
+  =====================================================================================================================
+  Q. Resize browser window?
+  => Dimension class available
+     Dimension d = new Dimension(480,620);
+     driver.manage().window().setSize(d);
+  =====================================================================================================================
+  Q. How to scroll up and down?
+  => public static void scrollPageDown(WebDriver driver){
+    	JavascriptExecutor js = ((JavascriptExecutor) driver);
+    	js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+    }
+  =====================================================================================================================
+  Q. How to perform Right click Action
+  =>  using Actions class
+       Actions action = new Actions(driver);
+       action.contextClick(driver.findElement(By.xpath("xpath here")).build().perform());
+       action.doubleClick().build().perform());
+  =====================================================================================================================
+  Q. Drag and drop 	
+  =====================================================================================================================
+  Q. how to handle checkboxes?      practice url : https://testautomationpractice.blogspot.com/
+  =>
+  =====================================================================================================================
+  Q. how can we launch browser ?
+    tradition way:
+  Approch 1: system.setProperty("webdriver.chrome.driver, "path of driver\\chromedriver.exe");
+  
+  Using WebdriverManager : 
+      step : add dependencies in POm.xml class
+      
+         WebDriverManager.firefox().setup();
+      WebDriverManager.chromedriver().setup();    // only singke statement , no need to download driver in local.
+      Webdeiver driver= new chromedriver();       // directly we setup using method
+  
+  =====================================================================================================================
+  Q. how to open URl ?
+   driver.get("www.google.com")   launch the URL 
+  =====================================================================================================================
+  Q. getTitle ?   Q. getCurrentUrl  ?  Q. driver.getPageSource();  ?
+  Ans => get title of the webpage
+  =====================================================================================================================
+  Q. how to check webElement display, enable?
+  Ans => isDisplay() and isEnable
+  =====================================================================================================================
+  
+  =====================================================================================================================
+  
+  =====================================================================================================================
+  
+  
+  
+   =====================================================================================================================
+  
+  
+  
+   =====================================================================================================================
+  
+  
+  
+  
+  
+   =====================================================================================================================
+  
+  
+  
+  
+   =====================================================================================================================
+  
+  
+  
+   =====================================================================================================================
+  
+  
+   =====================================================================================================================
+  
+  
+   =====================================================================================================================
+  
+  
+   =====================================================================================================================
+  
+ 
+
 
 
 

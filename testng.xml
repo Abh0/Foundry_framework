@@ -16,9 +16,9 @@
 		<classes>
 			
 			
-			<!--	<class name="testCases.TC_001_getfreedemo_page"/> 
+				<class name="testCases.TC_001_getfreedemo_page"/> 
 				 	<class name="testCases.TC_002_SignIn_page"/>    
-		 <class name="testCases.TC_003_Login_Logout"/>   
+		<!--  <class name="testCases.TC_003_Login_Logout"/>          --> 
 			 		<class name="testCases.TC_004_AddNewUser"/>    
 				<class name="testCases.TC_005_AddNewOrder"/>     
 					 
@@ -29,9 +29,11 @@
 				 <class name="testCases.TC_009_AddNewCoupon"/>  
 							  <class name="testCases.TC_010_AddcouponWithDiscountPer"/>
 				 <class name="testCases.TC_011_AddCouponFreeShipping"/>	 
-				<class name="testCases.TC_012_AddCouponBuyXGetY"/> 
-			 <class name="testCases.TC_013_AddNewCustomCollection"/>  
-			<class name="testCases.TC_014_AddCollectionWithSubCollection"/> 
+				<class name="testCases.TC_012_AddCouponBuyXGetY"/>   
+					
+			 <class name="testCases.TC_013_AddNewCustomCollection"/> 
+			 	 
+		 <class name="testCases.TC_014_AddCollectionWithSubCollection"/> 
 			  <class name="testCases.TC_015_AddBrandCollection"/> 
  				 <class name="testCases.TC_016_AddNewBlogs"/>  
  				
@@ -39,18 +41,17 @@
 				 
 	              <class name="testCases.TC_018_EditBlog"/>	 
 	       	 
-				      <class name="testCases.TC_019_FindBrokenLink"/>-->
-				      	
+				     <class name="testCases.TC_019_FindBrokenLink"/>
 				      	
 				      	
 				 
- 			 <class name="testCases.TC_020_add_virtual_product"/>
+ 			 <class name="testCases.TC_020_add_virtual_product"/> 
 				 
-				 <!--	 <class name="testCases.TC_021_ChangeStatusOf_ORDER"/>
+				 	 <class name="testCases.TC_021_ChangeStatusOf_ORDER"/>
 
-				 	  <class name="testCases.TC_022_BulkAction_Apply"/>-->
-			
-	             
+				 	  <class name="testCases.TC_022_BulkAction_Apply"/>
+	               	<class name="testCases.TC_023_CreateNewMenu"/>    
+	              	<class name="testCases.TC_024_EditMenuAndUpdate"/> 
 	             	
 	             	
 		</classes>
@@ -110,6 +111,10 @@ java.lang.reflect.InvocationTargetException
 org.openqa.selenium.InvalidSelectorException
 java.lang.IllegalArgumentException
 java.lang.reflect.InvocationTargetException
+org.openqa.selenium.support.ui.UnexpectedTagNameException
+ 
+
+
 -->
 
 

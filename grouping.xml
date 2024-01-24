@@ -55,9 +55,7 @@
 	       	 
 				      <class name="testCases.TC_019_FindBrokenLink"/>
 				      	
-				      	
-				      	
-				 
+				      				 
  			 <class name="testCases.TC_020_add_virtual_product"/>
 				 
 				 	 <class name="testCases.TC_021_ChangeStatusOf_ORDER"/>
